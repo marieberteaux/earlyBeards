@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body onload="getInfosFromAPI('https://api.themoviedb.org/3/movie/upcoming?api_key=e082a5c50ed38ae74299db1d0eb822fe', {name: 'infos_films'});">
+
+    <div id="slider">
+        <button class="prev_next" type="button" onclick="changeSlide('before');"><img src="img/triangle_left.svg"/></button>
+        <div id="slider-wrapper"></div>
+        <div id="slider-nav"></div>
+        <button class="prev_next" type="button" onclick="changeSlide('next');"><img src="img/triangle_right.svg"/></button>
+    </div>        
+</body>
+</html>
